@@ -1,0 +1,36 @@
+<div class="d-flex justify-content-center mt-5">
+  <div class="col-6">
+    <form [formGroup]="employeeForm" (ngSubmit)="addemp()">
+      <div class="text-center mb-4">
+        <h1 class="mb-3">Sign Up</h1>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" formControlName="EmployeeID" class="form-control" id="floatingEmployeeID" placeholder="Employee ID">
+        <label for="floatingEmployeeID">Employee ID</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" formControlName="EmployeeName" class="form-control" id="floatingEmployeeName" placeholder="Employee Name">
+        <label for="floatingEmployeeName">Employee Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" formControlName="EmployeePhoneNumber" class="form-control" id="floatingEmployeePhoneNumber" placeholder="Employee Phone Number">
+        <label for="floatingEmployeePhoneNumber">Employee Phone Number</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="email" formControlName="EmployeeEmail" class="form-control" id="floatingEmployeeEmail" placeholder="Employee Email">
+        <label for="floatingEmployeeEmail">Employee Email</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="password" formControlName="Password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" formControlName="Role" class="form-control" id="floatingRole" placeholder="Role">
+        <label for="floatingRole">Role</label>
+      </div>
+      <div class="d-grid">
+        <button class="btn btn-lg btn-primary mt-3" type="submit" >Sign in</button>
+      </div>
+    </form>
+  </div>
+</div>

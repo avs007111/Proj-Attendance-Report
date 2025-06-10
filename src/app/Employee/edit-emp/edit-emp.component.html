@@ -1,0 +1,51 @@
+<div class ="container">
+    <form [formGroup]="myReactiveForm" (ngSubmit)="editemp(myReactiveForm)" >
+        <h2>Edit Employee Information</h2>
+        <div class="card-body">
+            <div class = "form-group">
+                <label for ="employeeID" class ="form-label">Employee ID</label>
+                <input
+                type ="number"
+                id="employeeID"
+                formControlName="rsemployeeID"
+                class="form-control"/>
+
+                <label for ="employeeName" class ="form-label">Employee Name</label>
+                <input
+                type ="text"
+                id="employeeName"
+                formControlName="rsemployeeName"
+                class="form-control"/>
+
+                <label for ="employeeEmail" class ="form-label">Employee Email</label>
+                <input
+                type ="text"
+                id="employeeEmail"
+                formControlName="rsemployeeEmail"
+                class="form-control"/>
+
+                <label for ="employeePhoneNumber" class ="form-label">Employee Phone Number</label>
+                <input
+                type ="number"
+                id="employeePhoneNumber"
+                formControlName="rsemployeePhoneNumber"
+                class="form-control"/>
+
+                <label for ="role" class ="form-label">Role</label>
+                <input
+                type ="text"
+                id="role"
+                formControlName="rsrole"
+                class="form-control"/>
+            </div>
+        </div>
+        <div class="card-footer bg-warning text-white">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" (click)="back()">Back </button>
+         </div>
+    </form>
+</div> 
+  
+  
+  
+  

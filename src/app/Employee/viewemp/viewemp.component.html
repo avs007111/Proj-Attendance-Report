@@ -1,0 +1,25 @@
+<table class = "table table-hover">
+      <tr>
+          <th>EmployeeID</th>
+          <th>EmployeeName</th>
+          <th>EmployeePhoneNumber</th>
+          <th>EmployeeEmail</th>
+          <th>EmployeeRole</th>
+      </tr>
+  <tr *ngFor="let emps of employee">
+    <td>{{emps.employeeID}}</td>
+    <td>{{emps.employeeName}}</td>
+    <td>{{emps.employeePhoneNumber}}</td>
+    <td>{{emps.employeeEmail}}</td>
+    <td>{{emps.role}}</td>
+    <td><button type="button" (click)="deleteemp(emps.employeeID)">Delete</button></td>
+  </tr>
+  <div>
+    <button id ="btn" name="btn" type = "button" (click)="back()">Back</button>
+  </div>
+</table>
+  
+
+
+  
+      
